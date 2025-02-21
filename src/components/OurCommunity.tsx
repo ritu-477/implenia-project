@@ -15,7 +15,7 @@ const OurCommunity = () => {
   return (
     <div
       id="community"
-      className="bg-light-white pt-[129px] pb-[130px] max-lg:py-28 max-md:py-20 max-sm:py-16 px-5"
+      className="bg-light-white pt-[129px] pb-[90px] max-lg:py-28 max-md:py-20 max-sm:py-16 px-5"
     >
       <div className="container max-w-[1108px] flex flex-col justify-center relative mx-auto">
         <Heading
@@ -76,7 +76,7 @@ const OurCommunity = () => {
               height={33.19}
             />
           </button>
-          <button className="swiper-next max-lg:hidden absolute right-0 bottom-[21%] z-20 ">
+          <button className="swiper-next max-lg:hidden absolute right-0 bottom-[25%] z-20 ">
             <Image
               src="/assets/images/svg/right-arrow.svg"
               alt="left-arrow"

@@ -2,7 +2,7 @@ import React from 'react'
 import Heading from './common/Heading'
 import CustomButton from './common/CustomButton';
 import { STORIES_LIST } from '@/utils/helper';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
 interface StoriesItem {
   image: string;
@@ -22,7 +22,7 @@ const IntrapreneurshipStories = () => {
                 key={i}
                 className="lg:w-[32.5%] sm:w-1/2 max-sm:w-full px-4 xl:px-[25.5px] max-lg:px-3 pt-[25px]"
               >
-                <div className="border border-black rounded-2xl lg:rounded-[28px] h-full overflow-hidden">
+                <div className="border border-black rounded-2xl lg:rounded-[28px] h-full overflow-hidden hover:shadow-sm transition-all duration-500">
                   <Image
                     src={obj.image}
                     alt={obj.imageAlt}

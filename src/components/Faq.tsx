@@ -6,16 +6,17 @@ import Description from "./common/Description";
 import { FaqIcon } from "@/utils/icons";
 
 interface FaqAnswerItem {
-    title: string;
-    description: string;
-  }
+  title: string;
+  description: string;
+}
 
 const Faq = () => {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null); 
 
-  const toggleAccordion = (index: any) => {
-    setOpenIndex(openIndex === index ? false : index);
+  const toggleAccordion = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index); 
   };
+
   return (
     <div className="bg-light-white pt-[128px] pb-[146px] max-lg:py-28 max-md:py-20 max-sm:py-16 px-5">
       <div className="max-w-[1090px] container mx-auto">
