@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html , body{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.text-shadow{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero-image{  
+  animation: cartoon 1s ;
+  transform-origin: bottom left;
+}
+
+@keyframes cartoon {
+  0%{
+    rotate: -90deg;
+  }
+}
+
+.swiper-slide{
+  padding-bottom: 40px;
+}
+
+@media (min-width: 1024.98px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+.swiper-pagination-bullet {
+  background-color: red !important; 
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FF132D !important; 
+}
+
+@media (max-width: 639.98px) {
+  .hero-bg-image{
+    background-position: right -100px center;
+  }
+}
